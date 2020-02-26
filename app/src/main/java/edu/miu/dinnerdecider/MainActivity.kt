@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main.view.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -15,8 +16,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         list.addAll(arrayOf("Hamburger", "Pizza","Mexican", "American", "Chinese"))
     }
-
     fun clickAdd(view: View) {
+
         list.add(newFood.text.toString())
     }
     fun clickDecide(view: View) {
